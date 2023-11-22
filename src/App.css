@@ -1,0 +1,98 @@
+body, .auth-form-container  {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  animation: gradientAnimation 10s linear infinite; /* Adjust the duration as needed */
+  background: linear-gradient(45deg, #4caf50, #2196f3, #f44336, #ff9800);
+  background-size: 400% 400%;
+  color: white;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: #333; 
+  background-color: #f0f5f9; 
+}
+
+.auth-form-container,
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid #333; 
+    border-radius: 10px;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input:hover,
+input:focus {
+  background-color: #445566; 
+  color: #fff;
+}
+
+button {
+  border: none;
+  background-color: #445566; 
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link-btn {
+  background: none;
+  color: #333;
+  text-decoration: underline;
+}
+
+.link-btn:hover {
+  color: #556677;
+}
+
+::placeholder {
+  color: #bbb; 
+}
